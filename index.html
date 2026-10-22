@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omega88</title>
+    <style>
+        /* Общие стили для красно-черной темы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: linear-gradient(145deg, #141414, #1a1a1a);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+            border: 1px solid #ff0000;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Стиль символа Омега */
+        .omega-logo {
+            font-size: 80px;
+            color: #ff0000;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            animation: pulse 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 20px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 span {
+            color: #ff0000;
+        }
+
+        p {
+            color: #a6a6a6;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        /* Стиль кнопки вызова */
+        .call-button {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+        }
+
+        .call-button:hover {
+            background-color: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+        }
+
+        .call-button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Анимация пульсации для логотипа */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            }
+            100% {
+                transform: scale(1.05);
+                text-shadow: 0 0 30px rgba(255, 0, 0, 0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Символ Омега -->
+        <div class="omega-logo">&Omega;</div>
+        
+        <!-- Название сайта -->
+        <h1>omega<span>88</span></h1>
+        
+        <p>Нужна консультация или возникли вопросы? Свяжитесь с нами прямо сейчас.</p>
+        
+        <!-- Кнопка позвонить -->
+        <a href="tel:+79332129310" class="call-button">Позвонить omega88</a>
+    </div>
+
+</body>
+</html>
